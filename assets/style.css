@@ -1,85 +1,30 @@
-body {
-  font-family: 'Noto Sans Telugu', 'Noto Sans Devanagari', Arial, sans-serif;
-  background: #f8f6ed;
-  margin: 0;
-  color: #333;
-}
 header {
-  background: #e7d6c6;
-  padding: 1em 0.5em;
-  text-align: center;
+  background: #f0e3c7;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  text-align: center; /* This centers all header content */
 }
-header h1, header h2 {
-  margin: 0.2em 0;
+header h1 {
+  font-family: 'Baloo 2', cursive;
+  font-size: 2.2rem;
+  margin: 0;
   color: #841c26;
+  display: inline-block; /* Allows centering inside header */
+  vertical-align: middle;
 }
-nav {
-  margin-top: 1em;
+header h1 svg {
+  width: 48px;
+  height: 48px;
+  fill: #841c26;
+  vertical-align: middle;
 }
-nav a {
-  margin: 0 0.8em;
-  color: #4b2e15;
-  text-decoration: none;
-  font-weight: bold;
-}
-nav a:hover, .enquiry-btn:hover {
-  color: #841c26;
-  text-decoration: underline;
-}
-main {
-  padding: 1em 2vw;
-  max-width: 800px;
-  margin: auto;
-}
-section {
-  margin-bottom: 2em;
-}
-ul {
-  padding-left: 1.2em;
-}
-blockquote {
-  background: #fffbe8;
-  border-left: 4px solid #d4bc93;
-  padding: 0.5em 1em;
-  margin: 1em 0;
-  font-style: italic;
-}
-footer {
-  text-align: center;
-  font-size: 0.9em;
-  color: #666;
-  background: #e7d6c6;
-  padding: 1em 0;
-  margin-top: 2em;
-}
-.enquiry-btn {
-  display: inline-block;
-  background: #841c26;
-  color: #fff;
-  padding: 0.5em 1.2em;
-  border-radius: 3px;
-  text-decoration: none;
-  margin-top: 1em;
-}
-.enquiry-btn:hover {
-  background: #4b2e15;
-}
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  justify-content: center;
-}
-.gallery img {
-  width: 180px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 7px;
-  box-shadow: 0 2px 8px #d4bc93;
-}
-@media (max-width: 600px) {
-  main { padding: 1em 1vw; }
-  header, footer { padding: 0.7em 0.2em; }
-  nav a { margin: 0 0.3em; }
-  .gallery img { width: 98vw; height: auto; }
+header h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 0.2rem 0 1rem 0;
+  color: #6d3e1a;
+  text-align: center; /* Ensures h2 centers too */
 }
