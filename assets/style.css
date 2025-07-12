@@ -1,0 +1,85 @@
+body {
+  font-family: 'Noto Sans Telugu', 'Noto Sans Devanagari', Arial, sans-serif;
+  background: #f8f6ed;
+  margin: 0;
+  color: #333;
+}
+header {
+  background: #e7d6c6;
+  padding: 1em 0.5em;
+  text-align: center;
+}
+header h1, header h2 {
+  margin: 0.2em 0;
+  color: #841c26;
+}
+nav {
+  margin-top: 1em;
+}
+nav a {
+  margin: 0 0.8em;
+  color: #4b2e15;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover, .enquiry-btn:hover {
+  color: #841c26;
+  text-decoration: underline;
+}
+main {
+  padding: 1em 2vw;
+  max-width: 800px;
+  margin: auto;
+}
+section {
+  margin-bottom: 2em;
+}
+ul {
+  padding-left: 1.2em;
+}
+blockquote {
+  background: #fffbe8;
+  border-left: 4px solid #d4bc93;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  font-style: italic;
+}
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+  background: #e7d6c6;
+  padding: 1em 0;
+  margin-top: 2em;
+}
+.enquiry-btn {
+  display: inline-block;
+  background: #841c26;
+  color: #fff;
+  padding: 0.5em 1.2em;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-top: 1em;
+}
+.enquiry-btn:hover {
+  background: #4b2e15;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+.gallery img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px #d4bc93;
+}
+@media (max-width: 600px) {
+  main { padding: 1em 1vw; }
+  header, footer { padding: 0.7em 0.2em; }
+  nav a { margin: 0 0.3em; }
+  .gallery img { width: 98vw; height: auto; }
+}
